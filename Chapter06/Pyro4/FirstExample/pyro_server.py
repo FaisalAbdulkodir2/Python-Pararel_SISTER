@@ -2,8 +2,8 @@ import Pyro4
 
 class Server(object):
     @Pyro4.expose
-    def welcomeMessage(self, name):
-        return ("Hi welcome " + str (name))
+    def welcomeMessage(self, name, age):
+        return ("Hi welcome " + str (name) + "\nand you are " + str (age)+ " years old")
 
 def startServer():
     server = Server()

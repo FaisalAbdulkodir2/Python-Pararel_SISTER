@@ -1,6 +1,7 @@
 import concurrent.futures
 import time
 
+time.clock = time.time
 number_list = list(range(1, 11))
 
 
